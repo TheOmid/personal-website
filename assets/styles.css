@@ -5,24 +5,21 @@
 html{
   height: 100%;
 }
+
 body{
   font-family: 'Roboto', sans-serif;
   background-image: -webkit-linear-gradient(30deg, #fdfbfb 0%, #ebedee 100%);
-  background-image: -o-linear-gradient(30deg, #fdfbfb 0%, #ebedee 100%);
-  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
   background-size: cover;
   color: #080808;
   height: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
 /*We need to put body and html height to 100% and since
 this is a child of those parents, if we put it to be 
 at least 100% it would properly fill the screen*/
-
 #wrapper{
   min-height: 100%;
 }
@@ -52,8 +49,7 @@ header.major h3{
   margin-left: auto;
   margin-right: auto;
   object-fit: cover;
-  -webkit-animation: shadow-drop-2-center 1s ease-in-out both;
-  	        animation: shadow-drop-2-center 1s ease-in-out both;
+  animation: shadow-drop-2-center 0.7s ease-in-out both;
 }
 
 /* ----------------------------------------------
@@ -64,32 +60,16 @@ header.major h3{
  * ----------------------------------------------
  * animation shadow-drop-2-center
  * ----------------------------------------*/
- @-webkit-keyframes shadow-drop-2-center {
-   0% {
-     -webkit-transform: translateZ(0);
-             transform: translateZ(0);
-     -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-             box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-   }
-   100% {
-     -webkit-transform: translateZ(50px);
-             transform: translateZ(50px);
-     -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-             box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-   }
- }
  @keyframes shadow-drop-2-center {
    0% {
-     -webkit-transform: translateZ(0);
-             transform: translateZ(0);
-     -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-             box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+     
+      transform: translateZ(0);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
    }
    100% {
-     -webkit-transform: translateZ(50px);
-             transform: translateZ(50px);
-     -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-             box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+     
+      transform: translateZ(50px);
+      box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
    }
  }
 
@@ -175,9 +155,5 @@ header.major h3{
 
 #content{
   display: inline-block;
-}
-
-#podcast-link{
-  color: inherit;
 }
 
