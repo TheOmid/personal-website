@@ -2,6 +2,9 @@
   box-sizing: border-box;
 }
 
+html{
+  height: 100%;
+}
 body{
   font-family: 'Roboto', sans-serif;
   background-image: -webkit-linear-gradient(30deg, #fdfbfb 0%, #ebedee 100%);
@@ -9,14 +12,19 @@ body{
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
   background-size: cover;
   color: #080808;
+  height: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
-.main{
-  height: 100vh;
+/*We need to put body and html height to 100% and since
+this is a child of those parents, if we put it to be 
+at least 100% it would properly fill the screen*/
+
+#wrapper{
+  min-height: 100%;
 }
 
 #introduction{
@@ -145,4 +153,31 @@ header.major h3{
   }
 }
 
-/*#4acaa8*/
+#about{
+  position: relative;
+  padding: 0.8em 100px;
+  text-align: left;
+}
+
+#about h2{
+  font-size: 2.8em;
+}
+
+#activities{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.material-icons.md-48{
+  color: #4acaa8;
+  font-size: 48px;
+}
+
+#content{
+  display: inline-block;
+}
+
+#podcast-link{
+  color: inherit;
+}
+

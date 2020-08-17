@@ -7,6 +7,5 @@ function myFunction() {
       x.className = "nav";
       document.getElementById("bars").innerHTML="menu";
     }
-
     
   }
