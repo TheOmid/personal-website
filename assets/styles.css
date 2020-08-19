@@ -136,8 +136,10 @@ header.major h3{
 
 #about{
   position: relative;
-  padding: 0.8em 100px;
+  padding: 0.8em 50px;
   text-align: left;
+  border-top: solid 6px #888;
+  width: 100%;
 }
 
 #about h2{
@@ -149,12 +151,40 @@ header.major h3{
   flex-wrap: wrap;
 }
 
+#activity{
+  display: inline-block;
+  margin: 0 0 1.6875em 0;
+  position: relative;
+  vertical-align: middle;
+  width: 48%;
+}
+
 .material-icons.md-48{
   color: #4acaa8;
   font-size: 48px;
+  display: inline-block;
+  margin-left: 10px;
+  width: 31px;
+  vertical-align: middle;
 }
 
 #content{
+  font-style: italic;
+  font-weight: bold;
   display: inline-block;
+  margin-left: 15px;
+  width:calc(100% - 60px);
+  vertical-align:middle;
 }
 
+@media screen and (max-width: 600px){
+  #activity{
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+}
+
+#contact{
+  border-top: solid 6px #888;
+}
