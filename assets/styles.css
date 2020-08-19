@@ -159,9 +159,9 @@ header.major h3{
   width: 48%;
 }
 
-.material-icons.md-48{
+.material-icons.md-36{
   color: #4acaa8;
-  font-size: 48px;
+  font-size: 36px;
   display: inline-block;
   margin-left: 10px;
   width: 31px;
@@ -174,7 +174,7 @@ header.major h3{
   display: inline-block;
   margin-left: 15px;
   width:calc(100% - 60px);
-  vertical-align:middle;
+  vertical-align: middle;
 }
 
 @media screen and (max-width: 600px){
