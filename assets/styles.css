@@ -136,7 +136,7 @@ header.major h3{
 
 #about{
   position: relative;
-  padding: 0.8em 50px;
+  padding: 0.5em 50px;
   text-align: left;
   border-top: solid 6px #888;
   width: 100%;
@@ -146,7 +146,7 @@ header.major h3{
   font-size: 2.8em;
 }
 
-#activities{
+.activities{
   display: flex;
   flex-wrap: wrap;
 }
@@ -185,6 +185,30 @@ header.major h3{
   }
 }
 
-#contact{
+footer{
   border-top: solid 6px #888;
+  display: flex;
+}
+
+#col-text{
+  visibility: hidden;
+}
+
+.socials{
+  margin: auto;
+}
+
+#col{
+  margin: 10px;
+  float: left;
+}
+
+.socials i{
+  color: #4acaa8;
+  font-size: 24px;
+  margin: 10px;
+}
+
+.socials i:hover{
+  color: #080808;
 }
