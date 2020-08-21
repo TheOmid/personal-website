@@ -86,6 +86,7 @@ header.major h3{
   padding: 3px 15px;
   font-size: 20px;
   text-decoration: none;
+  font-family: 'Lato', 'Sans-serif';
 }
 
 .nav a:hover {
@@ -138,12 +139,13 @@ header.major h3{
   position: relative;
   padding: 0.5em 50px;
   text-align: left;
-  border-top: solid 6px #888;
-  width: 100%;
+  border-top: solid 3px #888;
 }
 
 #about h2{
   font-size: 2.8em;
+  font-family: 'Lato', 'Sans-serif';
+  margin-top: 5px !important;
 }
 
 .activities{
@@ -186,16 +188,43 @@ header.major h3{
 }
 
 footer{
-  border-top: solid 6px #888;
   display: flex;
+  flex-wrap: wrap;
 }
 
-#col-text{
-  visibility: hidden;
+#form-wrapper{
+  padding: 5px 10px;
+  margin: 5px 5px;
+  margin: auto;
+}
+
+#socials{
+  margin: auto;
+}
+label{
+  font-family: 'Lato', 'Sans-serif';
+}
+
+#text{
+  font-family: 'Roboto', sans-serif;
+}
+
+input, textarea{
+  border: none;
+  border-color: inherit;
+  border-radius: 3px;
+  padding: 2px 4px;
+}
+
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  border-top: solid 3px #888;
 }
 
 .socials{
   margin: auto;
+  display: block;
 }
 
 #col{

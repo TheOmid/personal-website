@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/styles.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/media/favicon.png">
   <link rel="stylesheet"href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script src="https://use.fontawesome.com/2c8dd97884.js"></script>
@@ -18,8 +19,8 @@
         <!--Nav bar-->
     <div class="nav" id="navbar">
       <a class="active" href="#intro">Home</a>
-      <a href="#about">What's up</a>
-      <a href="#contact">Contact</a>
+      <a href="#about" onclick="myFunction()">What's up</a>
+      <a href="#contact" onclick="myFunction()">Contact</a>
       <a href="#resume">Resume</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i id="bars" class="material-icons">menu</i>
@@ -32,7 +33,7 @@
 									<img id="profile_image" class = "img-responsive" src="assets/media/profile.jpg" alt="profile picture"/>
 								<div class="container">
 									<header class="major">
-                    <h3>This is where the soundwave animation will be placed</h3>
+                    <span>This is where the soundwave animation will be placed</span>
 										<p>Hi! I am <span id="name" style="font-weight: bolder;"> Omid Shahidi</span>.</p>
 									</header>
 									<p>I love podcasting, jamming to music, and coding. Oh, and also making every conversation philosophical.</p>
@@ -92,7 +93,9 @@
 
         </div>
 
-        <!--Contact-->
+        <!--Contact form-->
+        
+        <!--Contact footer-->
         <footer id="contact">
 
           <!--Ways to Contact-->
@@ -111,9 +114,22 @@
             </div>
 
           </div>
-
-          <!--Contact Form-->
           
+          <div id=form-wrapper>
+            <form class="contact-form">
+              <label for="Name">Name</label>
+              <br>
+              <input id="text" name="Name" placeholder="Your Name...">
+              <br>
+              <label for="Email">Email</label>
+              <br>
+              <input id="text" type="email" name="Email" placeholder="Your Email...">
+              <br>
+              <label for="Message">Message</label>
+              <br>
+              <textarea id="text" rows="4" cols="50" placeholder="How's your day been?"></textarea>
+            </form>
+          </div>
         </footer>
 
     
