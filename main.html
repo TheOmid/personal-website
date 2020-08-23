@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="description" content="Personal Website">
   <meta name="author" content="Omid Shahidi">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
   <link rel="stylesheet" href="assets/styles.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
     <div id="wrapper">
         <!--Nav bar-->
     <div class="nav" id="navbar">
-      <a class="active" href="#intro">Home</a>
+      <a class="active" href="main.html">Home</a>
       <a href="#about" onclick="myFunction()">What's up</a>
       <a href="#contact" onclick="myFunction()">Contact</a>
       <a href="#resume">Resume</a>
@@ -93,13 +93,15 @@
 
         </div>
 
-        <!--Contact form-->
+        
         
         <!--Contact footer-->
         <footer id="contact">
 
-          <!--Ways to Contact-->
-          <div class="socials">
+          
+
+           <!--Ways to Contact-->
+           <div class="socials">
 
             <div id="col"> 
               <i class="fa fa-linkedin" aria-hidden="true"></i> 
@@ -109,13 +111,19 @@
               <i class="fa fa-github" aria-hidden="true"></i> 
             </div>
 
+            <div id="col"> 
+              <i class="fa fa-twitter" aria-hidden="true"></i> 
+            </div>
+
             <div id="col">
               <i class="fa fa-envelope" aria-hidden="true"></i> 
             </div>
 
           </div>
-          
+
+          <!--Wrapper-->
           <div id=form-wrapper>
+            <!--Contact form-->
             <form class="contact-form">
               <label for="Name">Name</label>
               <br>
@@ -127,9 +135,12 @@
               <br>
               <label for="Message">Message</label>
               <br>
-              <textarea id="text" rows="4" cols="50" placeholder="How's your day been?"></textarea>
+              <textarea id="text" rows="5" cols="40" placeholder="How's your day been?"></textarea>
+              <br>
+              <input type="Submit" id="submit-button">
             </form>
           </div>
+          
         </footer>
 
     

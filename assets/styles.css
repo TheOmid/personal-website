@@ -9,7 +9,7 @@ html{
 
 body{
   font-family: 'Roboto', sans-serif;
-  background-image: -webkit-linear-gradient(30deg, #fdfbfb 0%, #ebedee 100%);
+  background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
   background-size: cover;
   color: #080808;
   height: 100%;
@@ -81,17 +81,18 @@ header.major h3{
 
 .nav a{
   float: left;
-  color: #aaa;
+  color: #080808;
   text-align: center;
-  padding: 3px 15px;
+  padding: 3px 10px;
   font-size: 20px;
+  font-weight: lighter;
   text-decoration: none;
   font-family: 'Lato', 'Sans-serif';
 }
 
 .nav a:hover {
   text-decoration: none;
-  color: inherit;
+  opacity: 50%;
 }
 
 .nav a.active{
@@ -189,18 +190,19 @@ header.major h3{
 
 footer{
   display: flex;
+  padding: 0px;
+  margin: 0px;
   flex-wrap: wrap;
+  border-top: solid 3px #888;
+  align-items: stretch;
+  justify-content: center;
 }
 
 #form-wrapper{
-  padding: 5px 10px;
-  margin: 5px 5px;
-  margin: auto;
+  padding: 5px 50px;
+  margin: auto 8px;
 }
 
-#socials{
-  margin: auto;
-}
 label{
   font-family: 'Lato', 'Sans-serif';
 }
@@ -216,26 +218,25 @@ input, textarea{
   padding: 2px 4px;
 }
 
-footer{
-  display: flex;
-  flex-wrap: wrap;
-  border-top: solid 3px #888;
+button{
+  background-color: #4acaa8;
+  color: #fdfbfb;
+  font-family: inherit;
+  border: none;
+  border-radius: 3px;
 }
 
 .socials{
-  margin: auto;
-  display: block;
+  margin: auto 0px;
+  float: left;
 }
 
 #col{
   margin: 10px;
+  padding: 10px;
   float: left;
-}
-
-.socials i{
   color: #4acaa8;
   font-size: 24px;
-  margin: 10px;
 }
 
 .socials i:hover{
