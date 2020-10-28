@@ -11,6 +11,7 @@
   <link rel="icon" href="assets/media/favicon.png">
   <link rel="stylesheet"href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script src="https://use.fontawesome.com/2c8dd97884.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
 <title>Omid Shahidi</title>
 </head>
   <body>
@@ -33,10 +34,11 @@
 									<img id="profile_image" class = "img-responsive" src="assets/media/profile.jpg" alt="profile picture"/>
 								<div class="container">
 									<header class="major">
-                    <span>This is where the soundwave animation will be placed</span>
-										<p>Hi! I am <span id="name" style="font-weight: bolder;"> Omid Shahidi</span>.</p>
+                    <div id ="wave-animation">
+                    </div>
+										<p id="intro-header">Hi! I'm <span id="name" style="font-weight: bolder;"> Omid Shahidi</span>.</p>
 									</header>
-									<p>I love podcasting, jamming to music, and coding. Oh, and also making every conversation philosophical.</p>
+									<p id="intro-text">podcaster, music enthusiast, coder, and that dude who makes every conversation philosophical</p>
 								</div>
 							</section>
           </div>
@@ -58,15 +60,16 @@
               <p id="content">Working on Personal Projects</p>
             </div>
 
-
+            <!--
             <div id="activity">
               <i class="material-icons md-36">search</i>
               <p id="content">Conducting research (currently looking for a project)</p>
             </div>
+            -->
             
             <div id="activity">
               <i class="material-icons md-36">mic</i>
-              <p id="content">Hosting <a id="podcast-link" href="https://anchor.fm/tat-podcast" style="color: inherit;">Thoughts about Thoughts</a> podcast</p>
+              <p id="content">Hosting <a id="podcast-link" href="https://anchor.fm/tat-podcast" style="color: inherit; font-style: italic;">Thoughts about Thoughts</a> podcast</p>
             </div>
 
             <div id="activity">
@@ -76,13 +79,15 @@
 
             <div id="activity">
               <i class="material-icons md-36">menu_book</i>
-              <p id="content">Reading the Meditations by Marcus Aurelius</p>
+              <p id="content">Reading <span style="font-style: italic;">the Meditations</span>s by <span style="font-style: italic;">Marcus Aurelius</span></p>
             </div>
-
+            
+            <!--
             <div id="activity">
               <i class="material-icons md-36">fitness_center</i>
               <p id="content">Working out</p>
             </div>
+          -->
 
             <div id="activity">
               <i class="material-icons md-36">music_note</i>
@@ -142,6 +147,10 @@
           </div>
           
         </footer>
+        <!--Copyright-->
+        <span style="font-size: 12px; display: flex; justify-content: center;">© 2020, Omid Shahidi</span>
+
+        
 
     
 <script src="assets/js/wave.js"></script>
