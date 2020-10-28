@@ -9,8 +9,8 @@ function setup() {
 function draw() {
   noFill();
   
-  if(count < 500){
-    stroke(count / 4, 255 - count * 0.8, 200, 100);
+  if(count < 800){
+    stroke(count / 5, 255 - count * 0.5, 200, 100);
     beginShape();
     for(x = 0; x < width; x++){
       let n = noise(x * 0.005, frameCount * 0.005);
@@ -23,8 +23,8 @@ function draw() {
   }
 }
 
-//loop, every 7 secs a new sketch
+//loop, every 10 secs a new sketch
 setInterval(() => {
   count = 0;
   background("#201F1F");
-}, 7000);
+}, 10000);
