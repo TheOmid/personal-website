@@ -23,7 +23,7 @@
       <a href="#about" onclick="myFunction()">What's up</a>
       <a href="#contact" onclick="myFunction()">Contact</a>
       <a href="#resume">Resume</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <a href="javascript:void(0);" class="icon" onclick="navFunction()">
         <i id="bars" class="material-icons">menu</i>
       </a>
     </div>
@@ -107,21 +107,20 @@
 
            <!--Ways to Contact-->
            <div class="socials">
-
             <div id="col"> 
-              <i class="fa fa-linkedin" aria-hidden="true"></i> 
+              <i class="fa fa-linkedin" aria-hidden="true" onclick="redirect(0)"></i> 
             </div>
           
             <div id="col">
-              <i class="fa fa-github" aria-hidden="true"></i> 
+              <i class="fa fa-github" aria-hidden="true" onclick="redirect(1)"></i> 
             </div>
 
             <div id="col"> 
-              <i class="fa fa-twitter" aria-hidden="true"></i> 
+              <i class="fa fa-twitter" aria-hidden="true" onclick="redirect(2)"></i> 
             </div>
 
             <div id="col">
-              <i class="fa fa-envelope" aria-hidden="true"></i> 
+              <i class="fa fa-envelope" aria-hidden="true" onclick="redirect(3)"></i> 
             </div>
 
           </div>
@@ -149,11 +148,9 @@
         </footer>
         <!--Copyright-->
         <span style="font-size: 12px; display: flex; justify-content: center;">© 2020, Omid Shahidi</span>
-
-        
-
-    
+            
 <script src="assets/js/wave.js"></script>
+<script src="assets/js/contact.js"></script>
 <script src="assets/js/navbar.js"></script>
 <script src="assets/js/refresh.js"></script>
   </body>
