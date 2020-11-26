@@ -16,6 +16,7 @@ body{
   background-attachment: fixed;
   background-repeat: no-repeat;
   overflow-x: hidden;
+  margin: 0px 0px;
 }
 
 #introduction{
@@ -39,9 +40,8 @@ header.major h3{
 #name{
   font-weight: bolder;
 }
-
-#main{
-  height: 100%;
+#web-face{
+  min-height: 50%;
 }
 
 .container p{
@@ -50,6 +50,7 @@ header.major h3{
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin: 40px 20px;
 }
 
 #profile_image{
@@ -80,14 +81,18 @@ header.major h3{
   overflow: hidden;
 }
 
- .nav{
+.nav{
   overflow: hidden;
   padding-top: 0px;
+  margin: 5px 20px;
+  background: -webkit-linear-gradient(#48AC84, #464c94);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .nav a{
   float: left;
-  color: #73C5A4;
   text-align: center;
   padding: 3px 10px;
   font-size: 20px;
@@ -98,11 +103,14 @@ header.major h3{
 
 .nav a:hover {
   text-decoration: none;
-  opacity: 50%;
+  background: -webkit-linear-gradient(#48AC84, #48AC84);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .nav a.active{
-  color: #48AC84;
+ font-weight: bold;
   font-weight: 100;
   text-decoration: none;
 }
@@ -174,7 +182,10 @@ header.major h3{
 }
 
 .material-icons.md-30{
-  color: #48AC84;
+  background: -webkit-linear-gradient(#48AC84, #464c94);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 30px;
   display: inline-block;
   width: 30px;
@@ -182,7 +193,7 @@ header.major h3{
 }
 
 #content{
-  font-weight: bold;
+  font-weight: bolder;
   display: inline-block;
   margin-left: 15px;
   vertical-align: middle;
@@ -224,8 +235,7 @@ input, textarea{
 }
 
 #submit-button{
-  background-color: #73C5A4;
-  color: #201F1F;
+  background-image: -webkit-linear-gradient(#48AC84, #464c94);
   font-family: inherit;
   font-weight: bolder;
   border: none;
@@ -242,12 +252,18 @@ input, textarea{
   margin: 10px;
   padding: 10px;
   float: left;
-  color: #48AC84;
+  background: -webkit-linear-gradient(#48AC84, #464c94);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 24px;
 }
 
 .socials i:hover{
-  opacity: 50%;
+  background: -webkit-linear-gradient(#48AC84, #48AC84);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #projects{
@@ -258,7 +274,9 @@ input, textarea{
 
 #project{
   position: relative;
-  background-color: #48AC84;
+  display: flex;
+  flex-wrap: wrap;
+  background: -webkit-linear-gradient(#48AC84, #464c94);
   border-radius: 10px;
   width: 500px;
   height: 300px;
