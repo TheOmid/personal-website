@@ -18,39 +18,61 @@ body{
   overflow-x: hidden;
 }
 
-/*We need to put body and html height to 100% and since
-this is a child of those parents, if we put it to be 
-at least 100% it would properly fill the screen*/
-#wrapper{
-  min-height: 100%;
-}
-
 #introduction{
   text-align: center;
-  overflow: hidden;
 }
 
 header.major h3{
   margin-right: 5%;
   margin-bottom: 5%;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
+}
+
+#intro-header{
+  font-size: 2.5em;
+  background: -webkit-linear-gradient(#48AC84, #464c94);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#name{
+  font-weight: bolder;
+}
+
+#main{
+  height: 100%;
 }
 
 .container p{
   font-size: 2.1em;
-  padding: 0.1em 0.7em;
+  background: -webkit-linear-gradient(#48AC84, #464c94);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #profile_image{
   margin-top: 25px;
   margin-bottom: 15px;
   border-radius: 50%;
-  width: calc(100px + 10vw);
+  width: calc(150px + 10vw);
   height: auto;
   margin-left: auto;
   margin-right: auto;
   object-fit: cover;
+  animation: fade-in 0.7s ease-in;
+}
+
+@keyframes fade-in {
+  0% {
+    transform: translateZ(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
 }
 
 #wave-animation{
@@ -65,7 +87,7 @@ header.major h3{
 
 .nav a{
   float: left;
-  color: #87CDB1;
+  color: #73C5A4;
   text-align: center;
   padding: 3px 10px;
   font-size: 20px;
@@ -80,7 +102,7 @@ header.major h3{
 }
 
 .nav a.active{
-  color: #73C5A4;
+  color: #48AC84;
   font-weight: 100;
   text-decoration: none;
 }
@@ -123,34 +145,39 @@ header.major h3{
 #about{
   position: relative;
   padding: 0.5em 60px 0px 60px;
+  margin: 10px 0px;
   text-align: left;
 }
 
 #about h2{
-  font-size: 2.8em;
+  color: #48AC84;
+  font-size: 2.2em;
   font-family: 'Lato', 'Sans-serif';
   margin-top: 5px !important;
 }
 
-.activities{
+#activities{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+
 }
 
 #activity{
   display: inline-block;
-  margin: 0 0 1.6875em 0;
+  margin: 10px 10px;
   position: relative;
   vertical-align: middle;
-  width: 48%;
+  width: 500px;
+  margin: 10px 20px;
 }
 
-.material-icons.md-36{
+.material-icons.md-30{
   color: #48AC84;
-  font-size: 36px;
+  font-size: 30px;
   display: inline-block;
-  margin-left: 10px;
-  width: 31px;
+  width: 30px;
   vertical-align: middle;
 }
 
@@ -158,19 +185,12 @@ header.major h3{
   font-weight: bold;
   display: inline-block;
   margin-left: 15px;
-  width:calc(100% - 60px);
   vertical-align: middle;
 }
 
-@media screen and (max-width: 600px){
-  #activity{
-    display: block;
-    width: 100%;
-    margin: auto;
-  }
-
-  #about{
-    min-height: 100%;
+@media screen and (max-width: 600px) {
+  #content{
+    width: calc(100% - 60px);
   }
 }
 
@@ -192,7 +212,7 @@ label{
   font-family: 'Lato', 'Sans-serif';
 }
 
-#text{
+#message{
   font-family: 'Roboto', sans-serif;
 }
 
@@ -228,4 +248,19 @@ input, textarea{
 
 .socials i:hover{
   opacity: 50%;
+}
+
+#projects{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#project{
+  position: relative;
+  background-color: #48AC84;
+  border-radius: 10px;
+  width: 500px;
+  height: 300px;
+  margin: 20px 20px;
 }

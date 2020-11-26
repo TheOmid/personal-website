@@ -10,23 +10,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/media/favicon.png">
   <link rel="stylesheet"href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <script src="https://use.fontawesome.com/2c8dd97884.js"></script>
+  <script src="https://kit.fontawesome.com/330f0fe968.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
 <title>Omid Shahidi</title>
 </head>
-  <body>
-    <!-- Wrapper -->
-    <div id="wrapper">
-        <!--Nav bar-->
+    <!--Nav bar-->
     <div class="nav" id="navbar">
-      <a class="active" href="main.html">Home</a>
-      <a href="#about" onclick="myFunction()">What's up</a>
-      <a href="#contact" onclick="myFunction()">Contact</a>
-      <a href="#resume">Resume</a>
-      <a href="javascript:void(0);" class="icon" onclick="navFunction()">
-        <i id="bars" class="material-icons">menu</i>
-      </a>
-    </div>
+    <a class="active" href="main.html">Home</a>
+    <a href="#activities">What's up</a>
+    <a href="#contact">Contact</a>
+    <a href="#resume">Resume</a>
+    <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+      <i id="bars" class="material-icons">menu</i>
+    </a>
+  </div>
+  <body>
+
         <!-- Main -->
           <div class="main">
             <!-- Intro -->
@@ -34,76 +33,63 @@
 									<img id="profile_image" class = "img-responsive" src="assets/media/profile.jpg" alt="profile picture"/>
 								<div class="container">
 									<header class="major">
-                    <div id ="wave-animation">
-                    </div>
-										<p id="intro-header">Hi! I'm <span id="name" style="font-weight: bolder;"> Omid Shahidi</span>.</p>
+                    <div id ="wave-animation"></div>
+										<p id="intro-header">Hi! I'm <span id="name"> Omid Shahidi</span>.</p>
 									</header>
 									<p id="intro-text">podcaster, music enthusiast, coder, and that dude who makes every conversation philosophical</p>
 								</div>
 							</section>
           </div>
-        </div>
-        <!--About-->
-        <div id="about">
 
-          <h2>What am I up to?</h2>
-          <div class="activities">
+          <!--About-->          
+          <div id="activities">
             
             <div id="activity">
-              <i class="material-icons md-36">school</i>
-              <p id="content">Studying CS and DS @ University of Michigan-College of Engineering (BSE '23)</p>
+              <i class="material-icons md-30">create</i>
+              <p id="content">Studying CS and DS @ UofM (BSE '23)</p>
             </div>
             
 
             <div id="activity">
-              <i class="material-icons md-36">laptop</i>
+              <i class="material-icons md-30">laptop</i>
               <p id="content">Working on Personal Projects</p>
             </div>
 
-            <!--
             <div id="activity">
-              <i class="material-icons md-36">search</i>
-              <p id="content">Conducting research (currently looking for a project)</p>
-            </div>
-            -->
-            
-            <div id="activity">
-              <i class="material-icons md-36">mic</i>
+              <i class="material-icons md-30">mic</i>
               <p id="content">Hosting <a id="podcast-link" href="https://anchor.fm/tat-podcast" style="color: inherit; font-style: italic;">Thoughts about Thoughts</a> podcast</p>
             </div>
 
             <div id="activity">
-              <i class="material-icons md-36">headset</i>
+              <i class="material-icons md-30">headset</i>
               <p id="content">Jamming to music</p>
             </div>
 
             <div id="activity">
-              <i class="material-icons md-36">menu_book</i>
-              <p id="content">Reading <span style="font-style: italic;">the Meditations</span>s by <span style="font-style: italic;">Marcus Aurelius</span></p>
+              <i class="material-icons md-30">book</i>
+              <p id="content">Reading <span style="font-style: italic;">the Meditations</span> by <span style="font-style: italic;">Marcus Aurelius</span></p>
             </div>
-            
-            <!--
-            <div id="activity">
-              <i class="material-icons md-36">fitness_center</i>
-              <p id="content">Working out</p>
-            </div>
-          -->
 
             <div id="activity">
-              <i class="material-icons md-36">music_note</i>
+              <i class="material-icons md-30">music_note</i>
               <p id="content">Learning to make Electronic/Dance music</p>
             </div>
             
           </div>
 
+        <div id="projects">
+        <div id="project">
+          <p>hi this is here as a placeholder ignore me!</p>
         </div>
 
-        
+        <div id="project">
+          <p>hi this is here as a placeholder ignore me!</p>
+        </div>
+
+        </div>
         
         <!--Contact footer-->
         <footer id="contact">
-
-          
 
            <!--Ways to Contact-->
            <div class="socials">
@@ -123,23 +109,27 @@
               <i class="fa fa-envelope" aria-hidden="true" onclick="redirect(3)"></i> 
             </div>
 
+            <div id="col">
+              <i class="fa fa-spotify" aria-hidden="true" onclick="redirect(4)"></i> 
+            </div>
+
           </div>
 
           <!--Wrapper-->
-          <div id=form-wrapper>
+          <div id="form-wrapper">
             <!--Contact form-->
             <form class="contact-form">
               <label for="Name">Name</label>
               <br>
-              <input id="text" name="Name" placeholder="Your Name...">
+              <input id="name" name="Name" placeholder="Your Name...">
               <br>
               <label for="Email">Email</label>
               <br>
-              <input id="text" type="email" name="Email" placeholder="Your Email...">
+              <input id="email" type="email" name="Email" placeholder="Your Email...">
               <br>
               <label for="Message">Message</label>
               <br>
-              <textarea id="text" rows="5" cols="40" placeholder="How's your day been?"></textarea>
+              <textarea id="message" rows="5" cols="40" placeholder="How's your day been?"></textarea>
               <br>
               <input type="Submit" id="submit-button">
             </form>
@@ -150,8 +140,10 @@
         <span style="font-size: 12px; display: flex; justify-content: center;">© 2020, Omid Shahidi</span>
             
 <script src="assets/js/wave.js"></script>
-<script src="assets/js/contact.js"></script>
-<script src="assets/js/navbar.js"></script>
-<script src="assets/js/refresh.js"></script>
+<script src="assets/js/script.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+<script src="assets/js/form.js"></script>
+</script>
   </body>
 </html>
