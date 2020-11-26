@@ -124,7 +124,10 @@ header.major h3{
 }
 
 #bars{
-  color: #48AC84;
+  background: -webkit-linear-gradient(#48AC84, #464c94);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media screen and (max-width: 600px) {
