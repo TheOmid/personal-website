@@ -40,9 +40,6 @@ header.major h3{
 #name{
   font-weight: bolder;
 }
-#web-face{
-  min-height: 50%;
-}
 
 .container p{
   font-size: 2.1em;
@@ -269,23 +266,36 @@ input, textarea{
   -webkit-text-fill-color: transparent;
 }
 
+
 #projects{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
+}
+
+#projects-head{
+  font-size: 33.6px;
+  margin: 20px 20px;
+  background: -webkit-linear-gradient(#48AC84, #464c94);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#break{
+  flex-basis: 100%;
+  height: 0;
 }
 
 #project{
   background: -webkit-linear-gradient(#48AC84, #464c94);
   border-radius: 10px;
   width: 500px;
-  height: 335px;
   margin: 20px 20px;
   padding: 10px 10px;
   color: #201F1F;
   position: relative;
-  align-items: flex-start;
+  align-self:flex-start;
 }
 
 #project-header{
@@ -293,17 +303,23 @@ input, textarea{
   font-size: 20px;
   margin: 10px;
   overflow: hidden;
+  font-style: italic;
 }
 
 #project-repo{
-  color: inherit;
   position: absolute;
   top: 0px;
   right: 10px;
   margin: 10px;
+  margin-left: 10px;
 }
 
-#project-repo:hover{
+#project-link{
+  color: inherit;
+  margin-left: 5px;
+}
+
+#project-link:hover{
   opacity: 50%;
 }
 
@@ -322,7 +338,7 @@ input, textarea{
 }
 
 #project-text{
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   text-align: center;
 }
 
@@ -330,11 +346,17 @@ input, textarea{
   margin: 10px;
 }
 
-#contd-wrapper{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
+#project-end{
+  background: -webkit-linear-gradient(#48AC84, #464c94);
+  border-radius: 10px;
+  width: 500px;
+  min-height: 250px;
+  max-height: 335px;
+  margin: 20px 20px;
+  padding: 10px 10px;
+  color: #201F1F;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

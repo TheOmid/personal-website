@@ -14,19 +14,17 @@
   <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
 <title>Omid Shahidi</title>
 </head>
-<div id="web-face">
-    <!--Nav bar-->
-    <div class="nav" id="navbar">
-    <a class="active" href="main.html">Home</a>
-    <a href="#activities">What's up</a>
-    <a href="#contact">Contact</a>
-    <a href="#resume">Resume</a>
-    <a href="javascript:void(0);" class="icon" onclick="navFunction()">
-      <i id="bars" class="material-icons">menu</i>
-    </a>
-  </div>
   <body>
-
+        <!--Nav bar-->
+        <div class="nav" id="navbar">
+          <a class="active" href="main.html">Home</a>
+          <a href="#activities">What's up</a>
+          <a href="#contact">Contact</a>
+          <a target="_blank" href="assets/media/Shahidi_Omid_B1.pdf">Resume</a>
+          <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+            <i id="bars" class="material-icons">menu</i>
+          </a>
+        </div>
         <!-- Main -->
           <div class="main">
             <!-- Intro -->
@@ -41,7 +39,6 @@
 								</div>
 							</section>
           </div>
-        </div>
 
         <!--About-->
         <p></p>
@@ -56,7 +53,7 @@
 
             <div id="activity">
               <i class="material-icons md-30">laptop</i>
-              <p id="content">Working on Personal Projects</p>
+              <p id="content">Working on <a href="#projects" style="color: inherit;">Personal Projects</a></p>
             </div>
 
             <div id="activity">
@@ -80,21 +77,50 @@
             </div>
             
           </div>
-
+        
+        
         <div id="projects">
+        <a id="projects-head">Projects</a>
+        <div id="break"></div> <!-- break -->
 
+        <!--Projects-->
         <div id="project">
           <a id="project-header">Personal Website</a>
-          <a id="project-repo" target="_blank" href="https://github.com/TheOmid/personal-website"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <div id="project-repo">
+            <a id="project-link" target="_blank" href="https://github.com/TheOmid/personal-website"><i class="fa fa-github" aria-hidden="true"></i></a>
+          </div>
           <div id="project-wrapper">
             <img id="project-pic" src="assets/media/personal-website.jpg" alt="profile picture">
             <div id="project-text">
-              <p>Well, you're already here...welcome!<br> Tech: HTML/CSS/JS</p>
+              <p>Well, you're already here...welcome!<br><br> <span style="font-weight: bold;">Tech:</span> HTML/CSS/JS, ps5.js</p>
            </div>
           </div>
         </div>
 
+
         <div id="project">
+          <a id="project-header">Thoughts about Thoughts Podcast</a>
+          <div id="project-wrapper">
+            <div id="project-repo">
+              <a id="project-link" target="_blank" href="https://open.spotify.com/show/5NwZBRbypAXBoG4pT4UaNK"><i class="fa fa-spotify" aria-hidden="true"></i></a>
+              <a id="project-link" target="_blank" href="https://anchor.fm/tat-podcast"><i class="fa fa-link" aria-hidden="true"></i></a>
+            </div>
+            <iframe id="project-pic" src="https://anchor.fm/tat-podcast/embed" height="105px" width="400px" frameborder="0" scrolling="no"></iframe>
+            <div id="project-text">
+              <p>I am a podcast enthusiast, and I always wanted to have my own podcast. 
+                During COVID-19 quarantine I decided to finally do it! 
+                Thoughts about Thoughts is a podcast about people's stories. 
+                We gather practical wisdown from our experiences in life, and the goal of this podcast is to spread it. 
+                I also like to make everything philosophical! 
+                Thoughts about Thoughts is available wherever you get your podcast from (check out the link).
+              <br><br>
+              <span style="font-weight: bold;">Tech:</span> Audacity, Amazing guests, Pretty ok host</p>
+            </p>
+           </div>
+        </div>
+      </div>
+
+        <div id="project-end">
           <!--
           <h id="project-header">Personal Website</h>
           <a id="project-repo" target="_blank" href=""><i class="fa fa-github" aria-hidden="true"></i></a>
@@ -105,9 +131,7 @@
            </div>
           </div>
         -->
-        <div id="contd-wrapper">
         <a style="font-size: 20px; font-weight: bolder;">More stuff coming soon👀</a>
-        </div>
         </div>
 
         </div>
