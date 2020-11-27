@@ -163,7 +163,6 @@ header.major h3{
   justify-content: center;
   margin-bottom: 50px;
   margin-top: 50px;
-  animation: fade-in 7s ease-in;
 }
 
 #activity{
@@ -204,7 +203,6 @@ header.major h3{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  animation: fade-in 7s ease-in;
 }
 
 #projects-header, #activities-header{
