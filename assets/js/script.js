@@ -1,9 +1,7 @@
 //fixing refresh issues
-history.scrollRestoration = "manual";
-
- window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
-  document.querySelector('html').style.scrollBehavior = '';
+window.beforeunload = function () {
+     window.scrollTo(0, 0);
+    document.querySelector('html').style.scrollBehavior = '';
 }
 
 //closing nav bar
