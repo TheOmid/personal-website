@@ -5,7 +5,7 @@ function setup() {
   canvas.parent("wave-animation");
   background("#201F1F");
 }
-//I hope wavification is a word, but basically drawing the sketch
+
 function draw() {
   noFill();
   
