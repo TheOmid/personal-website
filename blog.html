@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Personal Blog">
+  <meta name="author" content="Omid Shahidi">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+  <link rel="stylesheet" href="assets/styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/media/favicon.png">
+  <link rel="stylesheet"href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://kit.fontawesome.com/330f0fe968.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
+<title>Omid's Blog</title>
+</head>
+<body>
+    <!--Nav bar-->
+    <i id="open-menu" class="material-icons" onclick="openNav()">menu</i>
+        <!--Nav bar overlay-->
+        <div class="overlay" id="navbar">
+          <a href="javascript:void(0)" onclick="closeNav()"><i id="close-menu" class="material-icons">menu_open</i></a>
+          <ul id="nav-items">
+          <li id="nav-option"><a onclick="closeNav()" href="index.html">Home</a></li>
+          <li id="nav-option"><a onclick="closeNav()" href="blog.html">Blog</a></li>
+          <li id="nav-option"><a onclick="closeNav()" href="http://omids.me/index.html#contact">Contact</a></li>
+          <li id="nav-option"><a onclick="closeNav()" target="_blank" href="assets/media/Shahidi_Omid_B1.pdf">Resume</a></li>
+          </ul>        
+        </div>
+        <br>
+
+<!--Blogs-->
+<div id="blogs">
+    <div id="blog-block" style="align-self: center;">
+        <div id="blog-title">Audio Blogs</div>
+        <div id="blog-wrapper">
+            <img id="blog-pic" style="height: 115.9px" src="assets/media/audio-wave.png">
+            <div id="blog-text">
+                <p>Audio blogs coming soon!</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="blog-block" style="align-self: center;">
+        <div id="blog-title">Written Blogs</div>
+        <div id="blog-wrapper">
+            <img id="blog-pic" src="assets/media/written-blog.jpg">
+            <div id="blog-text">
+                <p>Written blogs coming soon!</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

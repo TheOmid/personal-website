@@ -9,9 +9,9 @@ function setup() {
 function draw() {
   noFill();
   
-  if(count < 800){
-    stroke(count / 5, 255 - count * 0.5, 200, 100);
+  if(count < 400){
     beginShape();
+    stroke(count / 5, 255 - count * 0.5, 200, 100);
     for(x = 0; x < width; x++){
       let n = noise(x * 0.005, frameCount * 0.005);
       let y = map(n, 0, 1, 0, height);
@@ -27,4 +27,4 @@ function draw() {
 setInterval(() => {
   count = 0;
   background("#201F1F");
-}, 10000);
+}, 9000);

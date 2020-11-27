@@ -15,17 +15,19 @@
 <title>Omid Shahidi</title>
 </head>
   <body>
-        <!--Nav bar-->
-        <!--<div class="nav" id="navbar">
-          <a class="active" href="main.html">Home</a>
-          <a href="#activities">What's up</a>
-          <a href="#contact">Contact</a>
-          <a target="_blank" href="assets/media/Shahidi_Omid_B1.pdf">Resume</a>
-          <a href="javascript:void(0);" class="icon" onclick="navFunction()">
-            <i id="bars" class="material-icons">menu</i>
-          </a>
-        </div>-->
-        
+    <!--Nav bar-->
+    <i id="open-menu" class="material-icons" onclick="openNav()">menu</i>
+        <!--Nav bar overlay-->
+        <div class="overlay" id="navbar">
+          <a href="javascript:void(0)" onclick="closeNav()"><i id="close-menu" class="material-icons">menu_open</i></a>
+          <ul id="nav-items">
+          <li id="nav-option"><a onclick="closeNav()" href="index.html">Home</a></li>
+          <li id="nav-option"><a onclick="closeNav()" href="blog.html">Blog</a></li>
+          <li id="nav-option"><a onclick="closeNav()" href="http://omids.me/index.html#contact">Contact</a></li>
+          <li id="nav-option"><a onclick="closeNav()" target="_blank" href="assets/media/Shahidi_Omid_B1.pdf">Resume</a></li>
+          </ul>        
+        </div>
+        <br>
         <!-- Main -->
           <div class="main">
             <!-- Intro -->
@@ -42,10 +44,11 @@
           </div>
 
         <!--About-->
-        <p></p>
+        
           <!--activities-->          
           <div id="activities">
-            
+            <div id="activities-header">What am I up to?</div>
+            <div id="break"></div>
             <div id="activity">
               <i class="material-icons md-30">create</i>
               <p id="content">Studying CS and DS @ UofM (BSE '23)</p>
@@ -81,17 +84,17 @@
         
         
         <div id="projects">
-        <a id="projects-head">Projects</a>
+        <a id="projects-header">Projects</a>
         <div id="break"></div> <!-- break -->
 
         <!--Projects-->
         <div id="project">
-          <a id="project-header">Personal Website</a>
+          <a id="project-title">Personal Website</a>
           <div id="project-repo">
             <a id="project-link" target="_blank" href="https://github.com/TheOmid/personal-website"><i class="fa fa-github" aria-hidden="true"></i></a>
           </div>
           <div id="project-wrapper">
-            <img id="project-pic" src="assets/media/personal-website.jpg" alt="profile picture">
+            <img id="project-pic" src="assets/media/personal-website.jpg" alt="personal website screenshot">
             <div id="project-text">
               <p>Well, you're already here...welcome!<br><br> <span style="font-weight: bold;">Tech:</span> HTML/CSS/JS, ps5.js</p>
            </div>
@@ -100,7 +103,7 @@
 
 
         <div id="project">
-          <a id="project-header">Thoughts about Thoughts Podcast</a>
+          <a id="project-title">Thoughts about Thoughts Podcast</a>
           <div id="project-wrapper">
             <div id="project-repo">
               <a id="project-link" target="_blank" href="https://open.spotify.com/show/5NwZBRbypAXBoG4pT4UaNK"><i class="fa fa-spotify" aria-hidden="true"></i></a>
@@ -123,7 +126,7 @@
 
         <div id="project-end">
           <!--
-          <h id="project-header">Personal Website</h>
+          <h id="project-title">Personal Website</h>
           <a id="project-repo" target="_blank" href=""><i class="fa fa-github" aria-hidden="true"></i></a>
           <div id="project-wrapper">
             <img id="project-pic" src="assets/media/personal-website.jpg" alt="profile picture">
@@ -186,10 +189,10 @@
           
         </footer>
         <!--Copyright-->
-        <span style="font-size: 12px; display: flex; justify-content: center;">© 2020, Omid Shahidi</span>
+        <span style="font-size: 12px; float: left; text-align: center; bottom: 0px;
+        width: 100%; margin-bottom: 10px;" >© 2020, Omid Shahidi</span>
             
 <script src="assets/js/wave.js"></script>
 <script src="assets/js/script.js"></script>
-</script>
   </body>
 </html>

@@ -6,15 +6,14 @@ history.scrollRestoration = "manual";
   document.querySelector('html').style.scrollBehavior = '';
 }
 
-//resposnive nav bar
-function navFunction() {
-    var x = document.getElementById("navbar");
-    if (x.className === "nav") {
-      x.className += " responsive";
-      document.getElementById("bars").innerHTML="menu_open";
-    } else {
-      x.className = "nav";
-      document.getElementById("bars").innerHTML="menu";
-    }
-    
+//closing nav bar
+function closeNav() {
+    document.getElementById("navbar").style.height = "0%";
+    document.getElementById("open-menu").style.display = "block";
+}
+
+//openin nav bar
+function openNav(){
+    document.getElementById("navbar").style.height = "100%";
+    document.getElementById("open-menu").style.display = "none";
 }
