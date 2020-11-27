@@ -22,9 +22,3 @@ function draw() {
     
   }
 }
-
-//loop, every 10 secs a new sketch
-setInterval(() => {
-  count = 0;
-  background("#201F1F");
-}, 9000);
