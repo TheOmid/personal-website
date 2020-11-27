@@ -320,6 +320,10 @@ input, textarea{
   padding: 2px 4px;
 }
 
+#name, #email{
+  width: 200px;
+}
+
 #submit-button{
   background-image: -webkit-linear-gradient(#46C391, #464c94);
   font-family: inherit;
