@@ -78,7 +78,7 @@ header.major h3{
   overflow: hidden;
 }
 
-.nav{
+/* .nav{
   overflow: hidden;
   padding-top: 0px;
   margin: 5px 20px;
@@ -112,19 +112,13 @@ header.major h3{
   text-decoration: none;
 }
 
-.nav .icon {
-  display: none;
-}
 
 .nav i{
   color: inherit;
 }
 
 #bars{
-  background: -webkit-linear-gradient(#48AC84, #464c94);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #464c94;
 }
 
 @media screen and (max-width: 600px) {
@@ -148,7 +142,7 @@ header.major h3{
     text-align: left;
     padding: 7px 15px;
   }
-}
+} */
 
 #about{
   position: relative;
