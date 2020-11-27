@@ -204,6 +204,7 @@ header.major h3{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  animation: fade-in 7s ease-in;
 }
 
 #projects-header, #activities-header{
