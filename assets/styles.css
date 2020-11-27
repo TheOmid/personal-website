@@ -303,6 +303,10 @@ input, textarea{
   margin: 10px;
 }
 
+#project-repo:hover{
+  opacity: 50%;
+}
+
 #project-wrapper{
   display: flex;
   flex-wrap: wrap;
