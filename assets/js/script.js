@@ -1,7 +1,7 @@
 //p5.js
 let count = 100;
 function setup() {
-  let canvas = createCanvas(windowWidth, windowHeight / 5);
+  let canvas = createCanvas(windowWidth, windowHeight / 4);
   canvas.parent("wave-animation");
   background("#201F1F");
 }
