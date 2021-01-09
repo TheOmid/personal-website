@@ -37,7 +37,7 @@ header.major h3{
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: fade-in 1.2s ease-in;
+  animation: fade-in 0.7s ease-in;
 }
 
 #name{
@@ -45,7 +45,7 @@ header.major h3{
 }
 
 #intro-text{
-  animation: fade-in 1.2s ease-in;
+  animation: fade-in 0.7s ease-in;
   background: -webkit-linear-gradient(#46C391, #464c94);
   background: -moz-linear-gradient(#46C391, #464c94);
   background: linear-gradient(#46C391, #464c94);
@@ -74,7 +74,7 @@ header.major h3{
   margin-left: auto;
   margin-right: auto;
   object-fit: cover;
-  animation: fade-in 1.2s ease-in;
+  animation: fade-in 0.7s ease-in;
 }
 
 @keyframes fade-in {
@@ -88,9 +88,18 @@ header.major h3{
   }
 }
 
+#overlay{
+  background: inherit;
+  height: 198.25px;
+  width: 100vw;
+}
+
 #wave-animation{
   background: inherit;
   overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 #navbar{
